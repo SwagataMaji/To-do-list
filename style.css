@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&subset=greek');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto',sans-serif;
+}
+
+body{
+    background-color:#f4d55a; 
+}
+
+.main-container{
+    display:flex;
+    width:100vw;
+    height:100vh;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.ta-wrapper{
+    background-color:#613504;
+    color:rgb(255, 255, 255);
+    padding:20px;
+    border:4px;
+    min-height:300px;
+}
+
+.heading h1{
+    text-align:center;
+    color:#613504;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.input-wrapper{
+    margin-bottom:20px;
+}
+
+.input-wrapper input{
+    outline:none;
+    border:0;
+    background-color:rgba(255, 255, 255, 0.3);
+    padding:10px;
+    color:white;
+    width:500px;
+}
+
+.input-wrapper button{
+    background-color:#905715;
+    color:rgb(255, 255, 255);
+    border:0;
+    padding:10px;
+    font-weight:bold;
+    border-radius:2px;
+    cursor:pointer;
+}
+
+.todo-item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:10px;
+    border-bottom:1px solid rgba(255, 255, 255, 0.2); 
+    padding-bottom:10px;
+}
+
+.todo-item input{
+    background-color:transparent;
+    border:none; 
+    color:white;
+    outline:none;
+    flex-grow: 1; 
+}
+
+.todo-item i{
+    color:#fcf9fa;
+    background:transparent;
+    border:1px solid #fefdfd; 
+    padding:6px;
+    cursor:pointer;
+    transition:0.2s ease-in-out;
+    margin-left:5px;
+}
+
+.todo-item i:hover{
+    color:white;
+    background-color:#905715; 
+}
+
+.done{
+    text-decoration:line-through;
+    color: #ccc; 
+}
+
+.fa-x{
+    padding:6px 8px !important;
+}
